@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; /* Witte achtergrond */
+    color: #1f3b73; /* Donkerblauwe tekst */
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    background-color: #1f3b73; /* Donkerblauw */
+    text-align: center;
+    color: #ffffff; /* Wit */
+    padding: 1rem;
+    border-radius: 0.5em;
+    animation: fadeIn 2s ease-in;
+    margin-bottom: 1.5rem;
+}
+
+.navbar {
+    background: #2855a4; /* Medium blauw */
+    padding: 1.2rem 0;
+    margin-bottom: 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: #ffffff; /* Wit */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #62a8e5; /* Lichtblauw */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32em;
+    margin: 3rem auto;
+}
+
+.video video {
+    max-width: 65em;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.info {
+    text-align: center;
+    background-color: #e8f1ff; /* Lichtblauw/wit */
+    padding: 2.5rem;
+    margin: 2.5rem auto;
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, 0.1);
+}
+
+.knoppen {
+    text-align: center;
+    background-color: #e8f1ff;
+    margin: 1.5rem auto;
+    padding: 1.2em;
+    max-width: 14em;
+    border-radius: 1em;
+    border: 0.2em solid #1f3b73;
+    box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, 0.1);
+}
+
+.knoppen a {
+    display: block;
+    text-decoration: none;
+    color: #1f3b73;
+    font-weight: bold;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.knoppen a:hover {
+    background-color: #62a8e5;
+    color: #ffffff;
+}
+
+.over-ons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.team-lid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 22em;
+    margin: 0 auto 3rem auto;
+    border: 0.1em solid #62a8e5;
+    border-radius: 0.5em;
+    padding: 2rem;
+    background-color: #e8f1ff;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.1);
+}
+
+.team-lid img {
+    max-width: 65%;
+    border-radius: 0.5em;
+    margin-bottom: 1.5em;
+    border: 0.1em solid #62a8e5;
+}
+
+.episodes-intro {
+    text-align: center;
+    margin: 2.5rem auto;
+    padding: 2.2rem;
+    background-color: #e8f1ff;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.episodes-intro strong {
+    font-size: 2em;
+    color: #1f3b73;
+    display: block;
+    margin-bottom: 1.2em;
+}
+
+.afleveringen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    margin: 3rem auto;
+    background-color: #e8f1ff;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+.afleveringen h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #1f3b73;
+    text-align: center;
+}
+
+.afleveringen p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: #1f3b73;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.afleveringen .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+
+footer {
+    background-color: #1f3b73;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
